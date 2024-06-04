@@ -35,10 +35,7 @@ class QmlWidget : public QWidget
 public:
     QQmlListProperty<QObject> data()
     {
-        return QQmlListProperty<QObject>(this, nullptr, QmlWidget::data_append,
-                                         QmlWidget::data_count,
-                                         QmlWidget::data_at,
-                                         QmlWidget::data_clear);
+        return QQmlListProperty<QObject>();
     }
 
 private:

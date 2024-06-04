@@ -36,10 +36,7 @@ public:
 
     QQmlListProperty<QObject> data()
     {
-        return QQmlListProperty<QObject>(this, nullptr, QmlBoxLayout::data_append,
-                                         QmlBoxLayout::data_count,
-                                         QmlBoxLayout::data_at,
-                                         QmlBoxLayout::data_clear);
+        return QQmlListProperty<QObject>();
     }
 
 private:
